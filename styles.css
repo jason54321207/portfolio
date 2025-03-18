@@ -11,13 +11,11 @@ body {
 header {
     background: #444;
     color: white;
-    padding: 15px;
+    padding: 15px 30px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     flex-wrap: wrap;
-    text-align: center;
-    position: relative;
 }
 
 /* Profile Picture */
@@ -27,7 +25,7 @@ header {
     border-radius: 50%;
     overflow: hidden;
     border: 3px solid white;
-    margin-bottom: 10px;
+    flex-shrink: 0;
 }
 
 .profile-pic {
@@ -40,14 +38,12 @@ header {
 .header-content {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
-    flex-grow: 1;
-    margin: 10px 0;
+    align-items: flex-start;
+    margin-left: 15px;
 }
 
 .name-qualifications {
-    margin-top: 10px;
+    text-align: left;
 }
 
 .qualifications {
@@ -55,14 +51,16 @@ header {
     color: #ddd;
 }
 
+/* Header layout fix for PC */
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
 /* NAVIGATION */
 nav {
     display: flex;
     gap: 15px;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 100%;
-    padding: 10px;
 }
 
 nav a {
@@ -120,10 +118,21 @@ section {
         text-align: center;
     }
 
+    .header-left {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
     .profile-container {
         width: 100px;
         height: 100px;
         margin-bottom: 5px;
+    }
+
+    .header-content {
+        margin-left: 0;
+        text-align: center;
     }
 
     nav {
