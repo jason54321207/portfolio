@@ -18,7 +18,7 @@ header {
     flex-wrap: wrap;
 }
 
-/* Left section: Profile Picture + Name */
+/* Left section: Profile Picture + Name (Desktop View) */
 .header-left {
     display: flex;
     align-items: center;
@@ -34,12 +34,12 @@ header {
     flex-shrink: 0;
 }
 
-/* Name and Qualifications */
+/* Name and Qualifications (Desktop: Left-aligned) */
 .header-content {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-left: 5px; /* Moved closer to profile picture */
+    margin-left: 10px; /* Desktop: Closer to profile picture */
 }
 
 .name-qualifications {
@@ -50,7 +50,7 @@ header {
 nav {
     display: flex;
     gap: 15px;
-    margin-left: auto; /* Push navigation to the right */
+    margin-left: auto; /* Push navigation to the right on desktop */
 }
 
 nav a {
@@ -105,6 +105,7 @@ section {
 @media screen and (max-width: 768px) {
     header {
         flex-direction: column;
+        align-items: center;
         text-align: center;
     }
 
@@ -120,14 +121,23 @@ section {
         margin-bottom: 5px;
     }
 
+    /* Center Name & Qualifications in Mobile */
     .header-content {
-        margin-left: 0;
+        margin-left: 0; /* Remove left alignment */
+        align-items: center; /* Center content */
         text-align: center;
     }
 
+    .name-qualifications {
+        text-align: center;
+    }
+
+    /* Center navigation links in Mobile */
     nav {
         flex-direction: column;
         gap: 5px;
+        align-items: center; /* Ensures navigation is centered */
+        margin-left: 0; /* Remove auto margin that was pushing it right */
     }
 
     .projects {
