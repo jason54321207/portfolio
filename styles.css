@@ -18,7 +18,7 @@ header {
     border-radius: 50%;
     overflow: hidden;
     border: 3px solid white;
-    flex-shrink: 0; /* Prevents resizing */
+    flex-shrink: 0;
 }
 
 /* Align profile image & name */
@@ -51,7 +51,7 @@ nav a {
     padding: 10px;
 }
 
-/* MOBILE VIEW */
+/* MOBILE VIEW: EVERYTHING CENTERED */
 @media screen and (max-width: 768px) {
     header {
         flex-direction: column;
@@ -69,6 +69,11 @@ nav a {
         flex-direction: column;
         align-items: center;
         text-align: center;
+        gap: 5px;
+    }
+
+    .name-qualifications {
+        text-align: center; /* Center the text */
     }
 
     nav {
