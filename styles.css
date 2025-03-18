@@ -18,6 +18,12 @@ header {
     flex-wrap: wrap;
 }
 
+/* Left section: Profile Picture + Name */
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
 /* Profile Picture */
 .profile-container {
     width: 120px;
@@ -39,7 +45,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-left: 15px;
+    margin-left: 10px; /* Reduced margin for closer alignment */
 }
 
 .name-qualifications {
@@ -49,12 +55,6 @@ header {
 .qualifications {
     font-size: 0.9em;
     color: #ddd;
-}
-
-/* Header layout fix for PC */
-.header-left {
-    display: flex;
-    align-items: center;
 }
 
 /* NAVIGATION */
