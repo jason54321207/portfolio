@@ -35,7 +35,7 @@ header {
 .header-content {
     display: flex;
     align-items: center;
-    margin-left: 120px;
+    margin-left: 180px;
 }
 .name-qualifications {
     display: flex;
