@@ -40,6 +40,7 @@ header {
     align-items: center; /* Aligns name and qualifications beside the profile picture */
     gap: 20px; /* Adds space between profile and text */
     flex-grow: 1; /* Allows the name/qualifications section to grow and take available space */
+    margin-left: 20px; /* This moves the name and qualifications slightly to the right */
 }
 
 .name-qualifications {
